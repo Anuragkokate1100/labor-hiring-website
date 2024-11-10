@@ -1,0 +1,287 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.btn-hire {
+    background-color: #f97316;
+    color: white;
+    padding: 10px 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    border-radius: 40px;
+}
+
+/* Main Banner */
+.main-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #fdf3e7;
+}
+
+.banner-content h1 {
+    font-size: 58px;
+    margin: 0;
+}
+
+.banner-content p {
+    font-size: 25px;
+    margin: 10px 0 20px;
+}
+
+.banner-image img {
+    width: 500px;
+}
+
+/* Services Section */
+#services {
+    padding: 50px;
+    text-align: center;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-cards .card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-cards img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+/* Explore Labor Section */
+.explore-labor {
+    text-align: center;
+    padding: 50px;
+}
+
+.explore-labor img {
+    width: 200px;
+    margin: 20px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+footer h2 {
+    margin-bottom: 20px;
+}
+
+footer .contact-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .contact-links ul li {
+    margin: 10px 0;
+}
+
+footer .contact-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Login & Signup Button Styles */
+.login-btn {
+    background-color: #ff6a00;
+    padding: 10px 20px;
+    border-radius: 40px;
+    color: white;
+    text-decoration: none;
+}
+
+.login-btn:hover {
+    background-color: #ff5700;
+}
+
+/* Login & Signup Form */
+#loginForm, #signupForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#loginForm input, #signupForm input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+#loginForm button, #signupForm button {
+    background-color: #f97316;
+    padding: 12px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#loginForm button:hover, #signupForm button:hover {
+    background-color: #ff5700;
+}
+
+/* Toggle Form */
+#signupSection {
+    display: none;
+}
+
+#toggleButton, #toggleButtonLogin {
+    cursor: pointer;
+    color: #f97316;
+    text-decoration: underline;
+    font-size: 16px;
+    margin-top: 15px;
+    align-self: center;
+}
+
+/* Mobile-Friendly Styles */
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .logo img {
+        width: 40px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        padding: 0;
+    }
+
+    .main-banner {
+        flex-direction: column;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .banner-content h1 {
+        font-size: 40px;
+    }
+
+    .banner-content p {
+        font-size: 20px;
+    }
+
+    .banner-image img {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 20px;
+    }
+
+    /* Login & Signup Form */
+    #loginForm, #signupForm {
+        padding: 20px;
+    }
+
+    /* Service Cards */
+    .service-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .service-cards .card {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* Explore Labor */
+    .explore-labor img {
+        width: 80%;
+        max-width: 150px;
+    }
+
+    /* Footer */
+    footer h2 {
+        font-size: 18px;
+    }
+}
+
+/* Hamburger Menu */
+#hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#menu-list {
+    display: flex;
+}
+
+#menu-list.show {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    /* Hamburger visibility for smaller screens */
+    #hamburger {
+        display: block;
+    }
+
+    #menu-list {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

@@ -1,0 +1,212 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial,  sans-serif;
+    background-color: #ffffff;
+
+}
+
+/* Header Styles */
+header {
+    background-color: #f97316; /* Change header color to #f97316 */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header-container h1 {
+    font-size: 2.5em;
+}
+
+.header-container p {
+    font-size: 1.2em;
+}
+
+/* Services Section */
+.services-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 100px; /* Increase space between worker boxes */
+    padding: 20px;
+    margin: 20px;
+}
+
+.service {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+    padding: 20px;
+    min-height: 300px; /* Minimum height */
+    width: 250px; /* Fixed width */
+    margin: auto; /* Center in the grid */
+}
+
+.service img {
+    width: 100%; /* Full width */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 10px 10px 0 0; /* Round top corners */
+}
+
+.service h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.service p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Hover Effect */
+.service:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.hire-btn {
+    background-color: #f97316; /* Change button color to #f97316 */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.hire-btn:hover {
+    background-color: #e06e00; /* Darker shade on hover for contrast */
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#workerList {
+    margin-top: 20px;
+    line-height: 1.6; /* Line height for better readability */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .services-section {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+}
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(47, 45, 45);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Worker list item */
+#workerList {
+    margin-top: 10px;
+}
+
+/* Worker item styles */
+#workerList div {
+    border: 1px solid #f97316; /* Color for worker item */
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px; /* Space between items */
+}
+
+/* Hire button styles */
+.hire-button {
+    background-color: #f97316; /* Orange color */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hire-button:hover {
+    background-color: #ffb84d; /* Lighter orange on hover */
+}
+

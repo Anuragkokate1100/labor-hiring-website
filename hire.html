@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hire-styles.css">
+    <title>Hire Workers</title>
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <h1>Explore Our Labor</h1>
+        <p>Browse our diverse selection of labor professionals, each with their own unique skills and expertise</p>
+    </div>
+</header>
+
+<div class="services-section">
+    <div class="service" onclick="requestLocation('Construction Worker')">
+        <img src="labour 4.jpg" alt="Construction Worker">
+        <h3>Construction Worker</h3>
+        <p>Painter</p>
+    </div>
+    <div class="service" onclick="requestLocation('Electrician')">
+        <img src="labour 5.jpg" alt="Electrician">
+        <h3>Electrician</h3>
+        <p>Plumber</p>
+    </div>
+    <div class="service" onclick="requestLocation('Cleaner')">
+        <img src="labour 6.jpg" alt="Cleaner">
+        <h3>Cleaner</h3>
+        <p>Handyman</p>
+    </div>
+    <div class="service" onclick="requestLocation('Builder')">
+        <img src="labour 7jpg.webp" alt="Builder">
+        <h3>Builder</h3>
+        <p>Landscaper</p>
+    </div>
+</div>
+
+<footer>
+    <button class="hire-btn" onclick="window.location.href='index.html'">Go Back</button>
+</footer>
+
+<!-- Modal for Worker List -->
+<div id="workerModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <div id="workerList"></div>
+    </div>
+</div>
+
+<script src="hire-script.js"></script>
+</body>
+</html>
